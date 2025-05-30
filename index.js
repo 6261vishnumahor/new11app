@@ -1,9 +1,11 @@
-const express=require("express")
-const port=require("./config/envconfig.js")
-const routes=require("./route/router.js")
+import express from "express"
+import port from "./config/envconfig.js"
+import routes from "./route/router.js"
 const app=express();
 
 app.use(routes)
+app.set("view engine","ejs")
+app.use(express.static("public"))
 // app.get("/",(req,res)=>{
 //     res.send("thi is a home")
 // }) 

@@ -1,8 +1,12 @@
 function home(req,res){
-res.send("vinit is a ")
+res.render("home")
 }
 function about(req,res){
-    res.send("vinit is my best friend")
+    res.render("about")
 }
+function adddata(req,res){
+    res.render("adddata")
+}
+const subdata=
 
-module.exports={home,about}
+export{home,about,adddata}
