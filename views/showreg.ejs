@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <%regdata.map(e=>{%><br>
+            <div></div>
+            <%=e.name %><br>
+                <%=e.email %><br>
+                    <%=e.number %><br>
+                        <%=e.password %><br>
+                            <%=e.cpass %><br>
+    </div>
+    <form action="showreg/delete/<%=e._id%>" method="POST">
+        <button>delete</button>
+        <a href="/showreg/updateform/<%=e._id%>">update</a>
+    </form>
+    <% })%><br>
+
+        </div>
+
+</body>
+
+</html>
